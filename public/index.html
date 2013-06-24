@@ -1,0 +1,25 @@
+<head>
+	<body background="img/wood.jpg">
+
+		<h1 style="text-align:center;font-family:arial;color:grey;font-size:72px;">Bella and her babies!</h1>
+		<script language="JavaScript" type="text/javascript">
+
+			function reload()
+			{
+			   setTimeout('reloadImg("refresh")',500)
+			};
+
+			function reloadImg(id) 
+			{ 
+			   var obj = document.getElementById(id); 
+			   var date = new Date(); 
+			   obj.src = "http://az9350.myfoscam.org:8080/snapshot.cgi?user=guest&pwd=&t=" + Math.floor(date.getTime()/1000); 
+			} 
+
+		</script>
+
+		<img src="http://az9350.myfoscam.org:8080/snapshot.cgi?user=guest&pwd=&t=" name="refresh" id="refresh" onload='reload(this)' onerror='reload(this)' style="margin:auto;display:block;border:5px solid black;box-shadow:4px 4px 3px #000000;" /> 
+	
+	
+	</body>
+</head>
