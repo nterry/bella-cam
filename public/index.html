@@ -13,12 +13,12 @@
 			{ 
 			   var obj = document.getElementById(id); 
 			   var date = new Date(); 
-			   obj.src = "http://az9350.myfoscam.org:8080/snapshot.cgi?user=guest&pwd=&t=" + Math.floor(date.getTime()/1000); 
+			   obj.src = "http://az9350.myfoscam.org:80/snapshot.cgi?user=guest&pwd=&t=" + Math.floor(date.getTime()/1000); 
 			} 
 
 		</script>
 
-		<img src="http://az9350.myfoscam.org:8080/snapshot.cgi?user=guest&pwd=&t=" name="refresh" id="refresh" onload='reload(this)' onerror='reload(this)' style="margin:auto;display:block;border:5px solid black;box-shadow:4px 4px 3px #000000;" /> 
+		<img src="http://az9350.myfoscam.org:80/snapshot.cgi?user=guest&pwd=&t=" name="refresh" id="refresh" onload='reload(this)' onerror='reload(this)' style="margin:auto;display:block;border:5px solid black;box-shadow:4px 4px 3px #000000;" /> 
 	
 	
 	</body>
